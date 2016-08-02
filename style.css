@@ -1,24 +1,24 @@
 @font-face {
   font-family: "BebasNeue";
-  src: url("../fonts/BebasNeue-Regular.otf") format("truetype");
-  src: url("../fonts/BebasNeue-Regular.ttf") format("truetype");
+  src: url("BebasNeue-Regular.otf") format("truetype");
+  src: url("BebasNeue-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Light.otf") format("truetype");
+  src: url("Montserrat-Light.otf") format("truetype");
   font-weight: 200;
 }
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Regular.otf") format("truetype");
+  src: url("Montserrat-Regular.otf") format("truetype");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../fonts/Montserrat-UltraLight.otf") format("truetype");
+  src: url(".Montserrat-UltraLight.otf") format("truetype");
   font-weight: 100;
 }
 
@@ -40,7 +40,7 @@ body .hero {
   color: white;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.4);
-  background-image: url("../images/bg2.jpg");
+  background-image: url("bg2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -141,7 +141,7 @@ body .hero nav a.navbar-brand {
   width: 200px;
   height: 100px;
   padding: 0px;
-  background-image: url("../images/brand2.png");
+  background-image: url("brand2.png");
   background-repeat: no-repeat;
   background-position: center;
 }
