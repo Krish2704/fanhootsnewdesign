@@ -1,0 +1,125 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes')
+    title Fanhoots
+    // Bootstrap Core CSS
+    link(rel='stylesheet', href='css/bootstrap.min.css')
+    // Custom CSS
+    link(rel='stylesheet', href='css/style.css')
+    //jQuery 
+    script(src='js/jquery-2.1.4.min.js')
+    // Latest compiled and minified CSS
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+    // Optional theme
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css', integrity='sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp', crossorigin='anonymous')
+    // Latest compiled and minified JavaScript
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa', crossorigin='anonymous')
+
+    // Google Fonts
+    link(href='https://fonts.googleapis.com/css?family=Varela+Round', rel='stylesheet')
+  body
+  
+    .hero
+      nav.navbar.navbar-light
+        a.navbar-brand
+        ul
+          li
+            a.btn2(type='button', data-toggle='modal', data-target='#LoginModal') Login
+          li
+            a(type='button', data-toggle='modal', data-target='#LoginModal')
+              span.glyphicon.glyphicon-align-justify
+      
+      .container.hero-content
+        h1.main-title
+          strong For the love of the Game
+        hr
+        p  Be a part of Fan Community where everyone cares about sports as much as you, Breathe Live and Talk sports. Enjoy!
+          // Button trigger modal
+        a.btn2(type='button', data-toggle='modal', data-target='#RegisterModal')
+          | Join Us
+      .down-arrow
+        a(href="#grid-cards").glyphicon.glyphicon-menu-down
+        // Modal for Login
+        #LoginModal.modal.fade.bd-example-modal-sm(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+          .modal-dialog.modal-sm(role='document')
+            .modal-content
+              .modal-header
+                button.close(type='button', data-dismiss='modal', aria-label='Close')
+                  span(aria-hidden='true') close
+                h4#myModalLabel.modal-title Login
+              .modal-body
+                .container
+                  form
+                    .form-group
+                      input#exampleInputEmail1.form-control(type='email', aria-describedby='emailHelp', placeholder='Your email')
+                    .form-group
+                      input#exampleInputPassword1.form-control(type='password', placeholder='Password')
+                    a.btn(type='button') Login
+                    .or-divider
+                      hr.other-hr 
+                      span OR
+                      hr.other-hr
+                  a.btn.fb Sign in using Facebook
+                  
+        // Modal for Register
+        #RegisterModal.modal.fade.bd-example-modal-sm(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+          .modal-dialog.modal-sm(role='document')
+            .modal-content
+              .modal-header
+                button.close(type='button', data-dismiss='modal', aria-label='Close')
+                  span(aria-hidden='true') close
+                h4#myModalLabel.modal-title Register
+              .modal-body
+                .container
+                  form
+                    .form-group
+                      input#exampleInputName.form-control(type='text', aria-describedby='textHelp', placeholder='Your Name')
+                    .form-group
+                      input#exampleInputEmail1.form-control(type='email', aria-describedby='emailHelp', placeholder='Your Email')
+                    .form-group
+                      input#exampleInputPassword1.form-control(type='password', placeholder='Password')
+                    .form-group
+                      input#exampleInputPassword1.form-control(type='password', placeholder='Confirm Password')
+                    a.btn(type='button') Register
+                    .or-divider
+                      hr.other-hr 
+                      span OR
+                      hr.other-hr
+                  a.btn.fb Sign up using Facebook                
+
+    #grid-cards
+      .container.row
+        .col-md-4
+          img(src='images/share.svg')
+          h3 Share
+          p Stuff about your favorite teams, events & players.
+        .col-md-4
+          img(src='images/discuss-issue.svg')
+          h3 Discuss
+          p Participate in Match Banter with like-minded people.
+        .col-md-4
+          img(src='images/Fanhoots-play-07.svg')
+          h3  Play
+          p Enjoy the thrill of Predicting & Betting on match results.
+
+    footer
+      .container
+        .footer-elements
+          .ele-left
+              a about us
+              a terms of use
+              a privacy policy
+              a community guidelines
+              a contact us 
+          hr
+          .ele-right
+            h5 Follow Us on :
+            a.footer-social Facebook
+            a.footer-social Twitter
+            a.footer-social Instagram
+          span.glyphicon.glyphicon-copyright-mark 
+          | Fanhoots
+        

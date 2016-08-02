@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Fanhoots</title>
+    <!-- Bootstrap Core CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--jQuery -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <!-- Latest compiled and minified CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+	<script src="script.js"></script>
+  </head>
+  <body>
+    <div class="hero">
+      <nav class="navbar navbar-light"><a class="navbar-brand"></a>
+        <ul>
+          <li><a type="button" data-toggle="modal" data-target="#LoginModal" class="btn2">Login</a></li>
+          <li><a type="button" data-toggle="modal" data-target="#LoginModal"><span class="glyphicon glyphicon-align-justify"></span></a></li>
+        </ul>
+      </nav>
+      <div class="container hero-content">
+        <h1 class="main-title"><strong>For the love of the Game</strong></h1>
+        <hr>
+        <p> Be a part of Fan Community where everyone cares about sports as much as you, Breathe Live and Talk sports. Enjoy!
+          <!-- Button trigger modal-->
+        </p><a type="button" data-toggle="modal" data-target="#RegisterModal" class="btn2">Join Us</a>
+      </div>
+      <div class="down-arrow"><a href="#grid-cards" class="glyphicon glyphicon-menu-down"></a>
+        <!-- Modal for Login-->
+        <div id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" class="modal fade bd-example-modal-sm">
+          <div role="document" class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">close</span></button>
+                <h4 id="myModalLabel" class="modal-title">Login</h4>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                  <form>
+                    <div class="form-group">
+                      <input id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Your email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <input id="exampleInputPassword1" type="password" placeholder="Password" class="form-control">
+                    </div><a type="button" class="btn">Login</a>
+                    <div class="or-divider">
+                      <hr class="other-hr"><span>OR</span>
+                      <hr class="other-hr">
+                    </div>
+                  </form><a class="btn fb">Sign in using Facebook</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal for Register-->
+        <div id="RegisterModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" class="modal fade bd-example-modal-sm">
+          <div role="document" class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">close</span></button>
+                <h4 id="myModalLabel" class="modal-title">Register</h4>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                  <form>
+                    <div class="form-group">
+                      <input id="exampleInputName" type="text" aria-describedby="textHelp" placeholder="Your Name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <input id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Your Email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <input id="exampleInputPassword1" type="password" placeholder="Password" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <input id="exampleInputPassword1" type="password" placeholder="Confirm Password" class="form-control">
+                    </div><a type="button" class="btn">Register</a>
+                    <div class="or-divider">
+                      <hr class="other-hr"><span>OR</span>
+                      <hr class="other-hr">
+                    </div>
+                  </form><a class="btn fb">Sign up using Facebook                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="grid-cards">
+      <div class="container row">
+        <div class="col-md-4"><img src="images/share.svg">
+          <h3>Share</h3>
+          <p>Stuff about your favorite teams, events & players.</p>
+        </div>
+        <div class="col-md-4"><img src="images/discuss-issue.svg">
+          <h3>Discuss</h3>
+          <p>Participate in Match Banter with like-minded people.</p>
+        </div>
+        <div class="col-md-4"><img src="images/Fanhoots-play-07.svg">
+          <h3> Play</h3>
+          <p>Enjoy the thrill of Predicting & Betting on match results.</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="footer-elements">
+          <div class="ele-left"><a>about us</a><a>terms of use</a><a>privacy policy</a><a>community guidelines</a><a>contact us </a></div>
+          <hr>
+          <div class="ele-right">
+            <h5>Follow Us on :</h5><a class="footer-social">Facebook</a><a class="footer-social">Twitter</a><a class="footer-social">Instagram</a>
+          </div><span class="glyphicon glyphicon-copyright-mark"> </span>Fanhoots
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
