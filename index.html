@@ -19,6 +19,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 	<script src="script.js"></script>
   </head>
   <body>
@@ -35,7 +36,7 @@
         <p> Be a part of Fan Community where everyone cares about sports as much as you, Breathe Live and Talk sports. Enjoy!
           <!-- Button trigger modal-->
         </p><br/>
-        <a type="button" data-toggle="modal" data-target="#RegisterModal" class="btn2">Join Us</a>
+		<a type="button" data-toggle="modal" data-target="#RegisterModal" class="btn2">Join Us</a>
       </div>
       <div class="down-arrow"><a href="#grid-cards" class="glyphicon glyphicon-menu-down"></a>
         <!-- Modal for Login-->
@@ -44,22 +45,23 @@
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">close</span></button>
-                <h4 id="myModalLabel" class="modal-title color1" style="font-size:37px;">Login</h4>
+                <h4 id="myModalLabel" class="modal-title color1" style="font-size:2em;">LOGIN</h4>
               </div>
               <div class="modal-body hey">
                 <div class="container">
+				<br/>
                  <form>
-                    <div class="form-group color1">
-                      <input id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Your email" class="form-control color1" style="font-size:1.3em;color:#999;">
-                    </div>
-                    <div class="form-group color1">
-                      <input id="exampleInputPassword1" type="password" placeholder="Password" class="form-control" style="font-size:1.3em;color:#999;">
-                    </div><a type="button" class="btn color1" style="color:#fff';font-size:1.32em;line-height:1em;">Login</a>
-                    <div class="or-divider">
-                      <hr class="other-hr"><span style="font-size:1.5em'color:#000;font-family: open sans-Light">OR</span>
-                      <hr class="other-hr">
-                    </div>
-                  </form><a class="btn fb"><span class="color1" style="color:#fff';font-size:2.32em;background-color">Sign in using Facebook</span></a>
+                    <input type="email" placeholder="  Email" style="border:none;font-size:1.071em;">
+					<hr style="border-bottom:1px solid black;margin-top:-0%;">
+                    <input type="password" placeholder="  Password" style="border:none;font-size:1.071em;">
+					<hr style="border-bottom:1px solid black;margin-top:-0%;">
+					<button class="btn btn-block" style="width:100%;background-color:#ed1c24;color:white;font-size:1.128em;">LOGIN</button>
+					<p class="text-center" style="font-size:0.929em;font-family:open sans-Light;color:#069;margin-top:5px;text-decoration:underline;">Forgot password?</p>
+					<hr style="margin-bottom:0px;">
+					<h4 class="text-center" style="font-size:1.286em;font-family:open sans-Light;">OR</h4>
+					<button class="btn btn-block" style="width:100%;color:white;background-color:#3b5998;font-size:1.128em;"><i class="fa fa-facebook"></i>&nbsp&nbspSIGN IN WITH FACEBOOK</button>
+                  </form>
+				  <br/>
                 </div>
               </div>
             </div>
@@ -71,28 +73,26 @@
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">close</span></button>
-                <h4 id="myModalLabel" class="modal-title">Register</h4>
+                <h4 id="myModalLabel" class="modal-title" style="font-size:2em;">REGISTER</h4>
               </div>
               <div class="modal-body">
                 <div class="container">
+				<br/>
                   <form>
-                    <div class="form-group">
-                      <input id="exampleInputName" type="text" aria-describedby="textHelp" placeholder="Your Name" class="form-control">
-                    </div>
-                    <div class="form-group">
-                      <input id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Your Email" class="form-control">
-                    </div>
-                    <div class="form-group">
-                      <input id="exampleInputPassword1" type="password" placeholder="Password" class="form-control">
-                    </div>
-                    <div class="form-group">
-                      <input id="exampleInputPassword1" type="password" placeholder="Confirm Password" class="form-control">
-                    </div><a type="button" class="btn">Register</a>
-                    <div class="or-divider">
-                      <hr class="other-hr"><span>OR</span>
-                      <hr class="other-hr">
-                    </div>
-                  </form><a class="btn fb">Sign up using Facebook                </a>
+                    <input type="text" placeholder="  Name" style="border:none;color:#999;font-size:1.071em;">
+					<hr style="border-bottom:1px solid black;margin-top:-0%;">
+					<input type="email" placeholder="  Email" style="border:none;font-size:1.071em;">
+					<hr style="border-bottom:1px solid black;margin-top:-0%;">
+                    <input type="password" placeholder="  Password" style="border:none;font-size:1.071em;">
+					<hr style="border-bottom:1px solid black;margin-top:-0%;">
+                    <input placeholder="  Confirm password" style="border:none;font-size:1.071em;">
+					<hr style="border-bottom:1px solid black;margin-top:-0%;">
+					<button class="btn btn-block" style="width:100%;background-color:#ed1c24;color:white;font-size:1.128em;">REGISTER</button>
+					<hr style="margin-bottom:0px;">
+					<h4 class="text-center" style="font-size:1.286em;font-family:open sans-Light;">OR</h4>
+					<button class="btn btn-block" style="width:100%;color:white;background-color:#3b5998;font-size:1.128em;"><i class="fa fa-facebook"></i>SIGN UP WITH FACEBOOK</button>
+                  </form>
+				  <br/>
                 </div>
               </div>
             </div>
@@ -100,8 +100,8 @@
         </div>
       </div>
     </div>
-	<br/><br/>
-	<h2 style="color:#e21851;">How it works?</h2>
+	<br/>
+	<h2 style="color:#e21851;font-size:2.8em;">How it works?</h2>
     <div id="grid-cards">
       <div class="container row">
         <div class="col-md-4"><img src="share.svg">
